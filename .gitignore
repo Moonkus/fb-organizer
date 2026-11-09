@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Django
+/staticfiles/
+/media/
+*.sqlite3
+
+# Secrets — only .env.example is tracked
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+client_secret*.json
+credentials.json
+token.json
+
+# Database dumps hold personal data — never in git
+*.dump
+*.sql.gz
+*.sql.zst
+*.backup
+*.bak
+backups/
+
+# Local tooling
+.idea/
+.vscode/
+.DS_Store
+.claude/settings.local.json
+.claude/worktrees/
+
+# Local symlink to ../fb-organizer-marketplace (the fb-standards harness) for browsing
+/harness
+
+# qa agent screenshots and Lighthouse reports (dev data, never committed)
+/.qa/
